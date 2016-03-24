@@ -1,9 +1,0 @@
-2014-10-30 17:18:22: -- Analysis Started by On File Change Incremental
-2014-10-30 17:18:22: Изменений: 3, Конфликтов: 0, Копий Времени: 0, Копий Состояния: 0/0, Ошибок: 0, All: 183
-2014-10-30 17:18:22: Left to Right: Copy File: 3 
-2014-10-30 17:18:22: == Sync Started by On File Change Incremental
-2014-10-30 17:18:23: Скопировано поверх '/Applications/MAMP/htdocs/sewinglab/www/index.php' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/index.php'
-2014-10-30 17:18:23: Скопировано поверх '/Applications/MAMP/htdocs/sewinglab/www/main.php' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/main.php'
-2014-10-30 17:18:24: Скопировано поверх '/Applications/MAMP/htdocs/sewinglab/www/page.php' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/page.php'
-2014-10-30 17:18:24: ===== Синхронизация завершена. Время 00:00:02, Скорость: 83.0 KB/s файлов/сек =====, Синхронизировано: 3, Ошибок: 0
-2014-10-30 17:18:25: 

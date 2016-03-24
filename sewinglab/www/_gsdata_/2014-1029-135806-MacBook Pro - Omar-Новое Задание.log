@@ -1,8 +1,0 @@
-2014-10-29 13:58:08: -- Analysis Started by On File Change Incremental
-2014-10-29 13:58:08: Изменений: 1, Конфликтов: 0, Копий Времени: 0, Копий Состояния: 0/0, Ошибок: 0, All: 179
-2014-10-29 13:58:08: Left to Right: Copy File: 1 
-2014-10-29 13:58:08: == Sync Started by On File Change Incremental
-2014-10-29 13:58:09: Скопировано поверх '/Applications/MAMP/htdocs/sewinglab/www/style.css' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/style.css'
-2014-10-29 13:58:17: FTP: reconnect succeeded
-2014-10-29 13:58:18: ===== Синхронизация завершена. Время 00:00:10, Скорость: 4.3 KB/s файлов/сек =====, Синхронизировано: 1, Ошибок: 0
-2014-10-29 13:58:19: 
