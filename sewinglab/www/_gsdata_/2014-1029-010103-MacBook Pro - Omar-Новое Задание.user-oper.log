@@ -1,0 +1,13 @@
+2014-10-29 01:01:03: Comparing /Applications/MAMP/htdocs/sewinglab/www/assets/js/all.js to ftp://omarr.jino.ru/domains/sewinglab.net/assets/js/all.js
+2014-10-29 01:01:03: Compare: "-u" "/Applications/MAMP/htdocs/sewinglab/www/assets/js/all.js" "/var/tmp/gst_36395_1.tmp"
+2014-10-29 01:01:03: ===== Done =====
+2014-10-29 01:01:03: 
+2014-10-29 01:01:10: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2014-10-29 01:01:10: == Sync Started by User
+2014-10-29 01:01:11: /assets/js/all.js: unresolved conflict results in No Copy
+2014-10-29 01:01:11: ===== Синхронизация завершена. Время 00:00:01, Скорость: 85.4 KB/s файлов/сек =====, Синхронизировано: 163, Ошибок: 0, Conflicts: 1
+2014-10-29 01:01:11: 
+2014-10-29 01:01:40: == Sync Started by User
+2014-10-29 01:01:41: Скопировано поверх '/Applications/MAMP/htdocs/sewinglab/www/assets/js/all.js' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/assets/js/all.js' (User Action)
+2014-10-29 01:01:42: ===== Синхронизация завершена. Время 00:00:03, Скорость: 2.0 KB/s файлов/сек =====, Синхронизировано: 1, Ошибок: 0
+2014-10-29 01:01:42: 

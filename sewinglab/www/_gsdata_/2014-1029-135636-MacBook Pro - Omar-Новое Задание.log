@@ -1,0 +1,8 @@
+2014-10-29 13:56:38: -- Analysis Started by On File Change Incremental
+2014-10-29 13:56:38: Изменений: 2, Конфликтов: 0, Копий Времени: 0, Копий Состояния: 0/0, Ошибок: 0, All: 179
+2014-10-29 13:56:38: Left to Right: Copy File: 1 Delete File: 1 
+2014-10-29 13:56:38: == Sync Started by On File Change Incremental
+2014-10-29 13:56:38: Удалён Файл 'ftp://omarr.jino.ru/domains/sewinglab.net/assets/img/icons-se46f0c981b.png'
+2014-10-29 13:56:39: Скопирован новый '/Applications/MAMP/htdocs/sewinglab/www/assets/img/icons-sb9193695f1.png' -> 'ftp://omarr.jino.ru/domains/sewinglab.net/assets/img/icons-sb9193695f1.png'
+2014-10-29 13:56:39: ===== Синхронизация завершена. Время 00:00:01, Скорость: 39.3 KB/s файлов/сек =====, Синхронизировано: 2, Ошибок: 0
+2014-10-29 13:56:40: 

@@ -1,0 +1,56 @@
+<section class="send-screen">
+	<div class="container">
+		<div class="send-screen__form">
+			<div class="send-screen__title">
+				<strong>Остались вопросы?</strong>
+				<br>
+				<span>Просто напишите нам и получите ответ!</span>
+			</div>
+			<form method="get" name="form-7">
+				<div class="send__input cf">
+					<label for="Form7Name">
+						<input name="name" id="Form7Name" type="text" placeholder="Введите ваше имя">
+						<i class="icons-send_name"></i>
+					</label>
+				</div>
+				<div class="send__input cf">
+					<label for="Form7Tel">
+						<input class="number-mask" name="tell" id="Form7Tel" type="tel" placeholder="Введите телефон">
+						<i class="icons-send_tel"></i>
+					</label>
+				</div>
+				<div class="send__input cf">
+					<label for="Form7Mail">
+						<textarea name="question" id="Form7Mail" cols="10" rows="4" placeholder="Ваши вопросы"></textarea>
+						<i class="icons-question"></i>
+					</label>
+				</div>
+				<div class="send__btn">
+					<input onClick="ga('send', 'event', 'Отправка заявки', 'Нажатие кнопки', 'Форма снизу');" name="send" class="feedback cta__btn cta__btn-red cta__btn-square" value="Задать вопрос" type="submit" id="sendForm7">
+				</div>
+				<div class="send__privacy">
+					<small>Ваши данные в безопасности и не будут переданы 3им лицам.</small>
+				</div>
+			</form>
+		</div>
+		<div class="send-screen__promo">
+			<div class="screen__promo__title">
+				<span>
+					При заключении договора подарок
+					<br>
+					бутылка коньяка с 20-летней выдержкой 
+				</span>
+			</div>
+			<div class="screen__promo__ddl">
+				<span>
+					До конца акции осталось: 
+				</span>
+				<br>
+			<div id="timer2" class="timer"></div>
+			</div>
+			<div class="screen__promo__bottle">
+				<i class="icons-conjak"></i>
+			</div>
+		</div>
+	</div>
+</section>

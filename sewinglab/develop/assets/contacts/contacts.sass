@@ -1,0 +1,35 @@
+@import "__map/contacts__map"
+@import "__info/contacts__info"
+@import "__title/contacts__title"
+@import "__line/contacts__line"
+@import "__icon/contacts__icon"
+@import "__text/contacts__text"
+
+
+.contacts
+	position: relative
+	height: 670px
+	overflow: hidden
+	> .contacts__title
+		padding-top: 40px
+		background: url(assets/img/contacts_title.png) 50% 0 no-repeat
+		position: relative
+		z-index: 2
+		height: 244px
+	.top-zigzag
+		z-index: 3
+	.bottom-zigzag
+		bottom: -3px
+		z-index: 2
+
+.ymaps-b-zoom_hints-pos_right
+	top: 305px !important
+	left: 35px !important
+	+ ymaps
+		display: none
+
+.ymaps-controls-righttop
+	display: none !important
+
+.ymaps-copyrights-pane
+	display: none !important

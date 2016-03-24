@@ -1,0 +1,26 @@
+
+<div class="send-line__title">
+	<span>Оставьте заявку на бесплатный расчет стоимости вашего заказа + скидка до 20% на первый заказ</span>
+</div>
+<div class="send-line__form">
+	<form action="" method="get" name="<!-- @form-number -->">
+		<div class="send__input">
+			<label for="<!-- @form-number -->Name">
+				<input name="name" id="<!-- @form-number -->Name" type="text" placeholder="Введите имя">
+				<i class="icons-send_name"></i>
+			</label>
+		</div>
+		<div class="send__input">
+			<label for="<!-- @form-number -->Tel">
+				<input class="number-mask" name="tell" id="<!-- @form-number -->Tel" type="tel" placeholder="Введите телефон">
+				<i class="icons-send_tel"></i>
+			</label>
+		</div>
+		<div class="send__btn">
+			<input onClick="ga('send', 'event', 'Отправка заявки', 'Нажатие кнопки', '<!-- @ab-test-name -->');" name="send" class="feedback cta__btn cta__btn-green cta__btn-square" value="Оставить заявку" type="submit" id="<!-- @form-number -->Form1">
+		</div>
+	</form>
+	<div class="send__privacy">
+		<small>Ваши данные в безопасности и не будут переданы 3им лицам.</small>
+	</div>
+</div>

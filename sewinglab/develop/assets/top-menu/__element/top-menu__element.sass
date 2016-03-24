@@ -1,0 +1,28 @@
+.top-menu__element
+	position: relative
+	padding: 0 !important
+	&:first-child
+		box-shadow: -1px 0 0 #a9c23a, -2px 0 0 #667c15
+	a
+		display: inline-block
+		height: 47px
+		width: 100%
+		padding: 12px 15px 13px 15px !important
+		box-shadow: 1px 0 0 #667c15, 2px 0 0 #a9c23a
+		text-decoration: none
+		color: #000
+		position: relative
+		+text-shadow(0 -1px rgba(255,255,255,.4))
+		&:hover,
+		&.active
+			text-decoration: underline
+			text-shadow: none
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				background-color: #fff
+				left: 0
+				top: 0
+				opacity: .15

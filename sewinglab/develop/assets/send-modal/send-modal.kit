@@ -1,0 +1,66 @@
+<div style="display: none;">
+	<div id="sendModal">
+		<div class="send__modal">
+			<div class="send__title">
+				Оставьте заявку, и мы свяжемся 
+				с вами в ближайшее время
+			</div>
+			<form method="get" name="form-1" class="send__form">
+				<div class="send__input cf">
+					<label for="sendNameModal">
+						<input name="name" id="sendNameModal" type="text" placeholder="Введите имя">
+						<i class="icons-send_name"></i>
+					</label>
+				</div>
+				<div class="send__input cf">
+					<label for="sendTelModal">
+						<input class="number-mask" name="tell" id="sendTelModal" type="text" placeholder="Введите телефон">
+						<i class="icons-send_tel"></i>
+					</label>
+				</div>
+				<div class="send__btn">
+					<input onClick="ga('send', 'event', 'Отправка заявки', 'Нажатие кнопки', 'Модальная форма');" class="feedback cta__btn cta__btn-red cta__btn-square" name="send" value="оставить заявку" type="submit" id="SendForm1">
+				</div>
+			</form>
+			<div class="send__privacy">
+				<small>Ваши данные в безопасности и не будут переданы 3им лицам.</small>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display: none;">
+	<div id="priceModal">
+		<div class="send__modal">
+			<div class="send__title">
+				Зарегистрируйтесь для получения полного прайс-листа
+			</div>
+			<form action="" method="get" name="form-2" class="send__form">
+				<div class="send__input cf">
+					<label for="priceNameModal">
+						<input name="name" id="priceNameModal" type="text" placeholder="Введите имя">
+						<i class="icons-send_name"></i>
+					</label>
+				</div>
+				<div class="send__input cf">
+					<label for="priceTelModal">
+						<input class="number-mask" name="tell" id="priceTelModal" type="tel" placeholder="Введите телефон">
+						<i class="icons-send_tel"></i>
+					</label>
+				</div>
+				<div class="send__input cf">
+					<label for="priceMailModal">
+						<input name="e-mail" id="priceMailModal" type="text" placeholder="Введите email">
+						<i class="icons-send_mail"></i>
+					</label>
+				</div>
+				<div class="send__btn">
+					<input onClick="ga('send', 'event', 'Отправка заявки', 'Нажатие кнопки', 'Модальная форма регистрации');" class="feedback cta__btn cta__btn-green cta__btn-square" name="send" value="Зарегистрироваться" type="submit" id="SendForm2">
+				</div>
+			</form>
+			<div class="send__privacy">
+				<small>Ваши данные в безопасности и не будут переданы 3им лицам.</small>
+			</div>
+		</div>
+	</div>
+</div>
