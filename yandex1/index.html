@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телепрограмма</title>
+  </head>
+  <link rel="stylesheet" media="screen, projection" href="screen.css">
+  <link rel="stylesheet" media="print" type="text/css" href="print.css">
+  <link rel="stylesheet" media="screen, projection" href="assets/css/jBox.css">
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <div class="text_align_center text_size_l">Телепрограмма</div>
+      </div>
+      <form class="header__search search">
+        <input type="text" placeholder="Поиск по всем каналам" class="input search__input text_size_s">
+        <button type="submit" class="button search__submit"><i class="icon"></i></button>
+      </form>
+    </header>
+    <section class="filter drop-down">
+      <button class="button filter__head drop-down_js"><i class="icon filter__head-icon"></i>
+        <div class="filter__head-title text_size_s filter__head-title_status_close"><span class="filter__head-time">Сейчас</span>, <span class="filter__head-channel">Все каналы</span>, <span class="filter__head-type">Все жанры</span></div>
+        <div class="filter__head-title text_size_s filter__head-title_status_open"><span>Свернуть фильтр</span></div>
+      </button>
+      <form class="drop-down__content filter__content">
+        <div class="filter__item select_target_js">
+          <label for="filterItemTime" class="filter__item-label text_size_m filter__item-time">Когда</label>
+          <div class="filter__select-text select__text text_size_m"></div>
+          <select id="filterItemTime" onchange="changeFilterItemTime()" class="filter__select select">
+            <option value="option0">Сб, 2 апреля</option>
+            <option value="option1">Вс, 3 апреля</option>
+            <option selected value="2">Сейчас</option>
+            <option value="option3">Сегодня</option>
+            <option value="option4">Завтра</option>
+            <option value="option5">Вт, 5 апреля</option>
+            <option value="option6">Ср, 6 апреля</option>
+          </select>
+        </div>
+        <div class="filter__item select_target_js">
+          <label for="filterItemChannel" class="filter__item-label text_size_m filter__item-channel">Канал</label>
+          <div class="filter__select-text select__text text_size_m"></div>
+          <select id="filterItemChannel" onchange="changeFilterItemChannel()" class="filter__select select">
+            <option value="option0">Все каналы</option>
+            <option value="option1">Первый</option>
+            <option value="option2">Россия 1</option>
+            <option value="option3">НТВ</option>
+            <option value="option4">Матч ТВ</option>
+            <option value="option5">5 канал</option>
+            <option value="option6">СТС</option>
+          </select>
+        </div>
+        <div class="filter__item select_target_js">
+          <label for="filterItemType" class="filter__item-label text_size_m filter__item-type">Жанр</label>
+          <div class="filter__select-text select__text text_size_m"></div>
+          <select id="filterItemType" onchange="changeFilterItemType()" class="filter__select select text_size_m">
+            <option value="option0">Все жанры</option>
+            <option value="option1">Фильмы</option>
+            <option value="option2">Сериалы</option>
+            <option value="option3">Спорт</option>
+          </select>
+        </div>
+        <div class="filter__footer">
+          <button type="submit" class="button button_view_transparent button_border_gray text_size_m">Сбросить</button>
+          <button type="button" class="button button_view_transparent button_border_blue text_size_m filter__button_action_sumbit">Отфильтровать</button>
+        </div>
+      </form>
+    </section>
+    <section class="content">
+      <div data-channel="one" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/1.png" alt=""></div>
+          <div class="channel__name text_size_m">Первый</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">05:00</div>
+            <div class="channel__item-title">Телеканал "Доброе утро"</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:00</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:20</div>
+            <div class="channel__item-title">Контрольная закупка</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:50</div>
+            <div class="channel__item-title">Жить здорово!</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">10:55</div>
+            <div class="channel__item-title">Модный приговор</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">12:00</div>
+            <div class="channel__item-title">Новости с субтитрами</div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" class="channel__item channel__item_popup_yes">
+            <div class="channel__item-time">12:15</div>
+            <div class="channel__item-title">Пусть говорят</div>
+            <div style="display: none" class="popup">
+              <div class="popup__pic"><img src="http://placehold.it/300/333/fff" alt=""></div>
+            </div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:25</div>
+            <div class="channel__item-title">Таблетка</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:55</div>
+            <div class="channel__item-title">Время покажет</div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">15:00</div>
+            <div class="channel__item-title">Новости с субтитрами</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">15:15</div>
+            <div class="channel__item-title">Время покажет</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">16:00</div>
+            <div class="channel__item-title">Мужское / Женское</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">17:00</div>
+            <div class="channel__item-title">Жди меня. Выпуск от 8 апреля</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:00</div>
+            <div class="channel__item-title">Вечерние новости с субтитрами</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:45</div>
+            <div class="channel__item-title">"Человек и закон" с Алексеем Пимановым</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">19:50</div>
+            <div class="channel__item-title">Поле чудес</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">21:00</div>
+            <div class="channel__item-title">Время</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">21:30</div>
+            <div class="channel__item-title">Голос. Дети</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">23:30</div>
+            <div class="channel__item-title">Вечерний Ургант</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">00:30</div>
+            <div class="channel__item-title">Мистер Динамит: Восход Джеймса Брауна</div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">02:45</div>
+            <div class="channel__item-title">Пена дней</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+      <div data-channel="russia-one" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/2.png" alt=""></div>
+          <div class="channel__name text_size_m">Россия 1</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">05:00</div>
+            <div class="channel__item-title">Утро России</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:00</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:15</div>
+            <div class="channel__item-title">Утро России</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:55</div>
+            <div class="channel__item-title">О самом главном</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">11:00</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">11:35</div>
+            <div class="channel__item-title">Местное время. Вести-Москва</div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">11:55</div>
+            <div class="channel__item-title">Тайны следствия-10. Чужая дверь</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:00</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:30</div>
+            <div class="channel__item-title">Местное время. Вести-Москва</div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:50</div>
+            <div class="channel__item-title">Вести. Дежурная часть</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">15:00</div>
+            <div class="channel__item-title">Без следа. 9-я серия</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">16:00</div>
+            <div class="channel__item-title">Без следа. 10-я серия</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">17:00</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">17:30</div>
+            <div class="channel__item-title">Местное время. Вести-Москва</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">17:50</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:15</div>
+            <div class="channel__item-title">Прямой эфир</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">19:35</div>
+            <div class="channel__item-title">Местное время. Вести-Москва</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">20:00</div>
+            <div class="channel__item-title">Вести</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">21:00</div>
+            <div class="channel__item-title">Юморина</div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">23:00</div>
+            <div class="channel__item-title">Старшая сестра</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">03:00</div>
+            <div class="channel__item-title">Эрнст Неизвестный: "Моя свобода - одиночество"</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">04:00</div>
+            <div class="channel__item-title">Комната смеха</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">04:55</div>
+            <div class="channel__item-title">Следствие ведут знатоки. Дело №21 - "Без ножа и кастета", 1-я серия</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+      <div data-channel="ntv" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/3.png" alt=""></div>
+          <div class="channel__name text_size_m">НТВ</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">05:00</div>
+            <div class="channel__item-title">Супруги. Любовь до безумия</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:00</div>
+            <div class="channel__item-title">Новое утро</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">09:00</div>
+            <div class="channel__item-title">Возвращение Мухтара-2. Бедный Вася</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">10:00</div>
+            <div class="channel__item-title">Сегодня</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">10:20</div>
+            <div class="channel__item-title">Москва. Три вокзала-3. "Цепная реакция". "Шальные деньги"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">12:00</div>
+            <div class="channel__item-title">Суд присяжных</div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:00</div>
+            <div class="channel__item-title">Сегодня</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:20</div>
+            <div class="channel__item-title">Обзор. Чрезвычайное происшествие</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:50</div>
+            <div class="channel__item-title">Место встречи</div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:55</div>
+            <div class="channel__item-title">"Зеркало для героя" с Оксаной Пушкиной</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">16:00</div>
+            <div class="channel__item-title">Сегодня</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">16:20</div>
+            <div class="channel__item-title">Улицы разбитых фонарей-14. "Капкан для опера". "Смерть в отеле"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:00</div>
+            <div class="channel__item-title">"Говорим и показываем" с Леонидом Закошанским</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">19:00</div>
+            <div class="channel__item-title">Сегодня</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">19:45</div>
+            <div class="channel__item-title">ЧП. Расследование</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">20:15</div>
+            <div class="channel__item-title">Крайний час</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">22:10</div>
+            <div class="channel__item-title">Морские дьяволы-5. Приглашение на вечеринку</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">23:10</div>
+            <div class="channel__item-title">Большинство</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">00:20</div>
+            <div class="channel__item-title">Морские дьяволы. Смерч. Стихия героев</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">01:00</div>
+            <div class="channel__item-title">Место встречи</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">02:05</div>
+            <div class="channel__item-title">"Зеркало для героя" с Оксаной Пушкиной</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">03:05</div>
+            <div class="channel__item-title">Топтуны. "Ящик Пандоры", 1-я и 2-я серии</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+      <div data-channel="match-tv" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/4.png" alt=""></div>
+          <div class="channel__name text_size_m">Матч ТВ</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">05:00</div>
+            <div class="channel__item-title">К Южному полюсу и обратно - в полном одиночестве</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">05:55</div>
+            <div class="channel__item-title">Обзор Лиги Европы</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:30</div>
+            <div class="channel__item-title">Ты можешь больше!</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">07:30</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">07:35</div>
+            <div class="channel__item-title">Все на "Матч"!</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:30</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:35</div>
+            <div class="channel__item-title">Специальный репортаж</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:55</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">10:00</div>
+            <div class="channel__item-title">Великие моменты в спорте</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">10:30</div>
+            <div class="channel__item-title">500 лучших голов</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">11:00</div>
+            <div class="channel__item-title">Рожденные побеждать</div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">12:00</div>
+            <div class="channel__item-title">Футбол. Лига Европы. 1/4 финала. "Атлетик" (Испания) - "Севилья" (Испания)"</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:00</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">14:05</div>
+            <div class="channel__item-title">Все на "Матч"!</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">14:45</div>
+            <div class="channel__item-title">1+1</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">15:30</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">15:35</div>
+            <div class="channel__item-title">"Безумный спорт" с Александром Пушным</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">16:05</div>
+            <div class="channel__item-title">Второе дыхание</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">16:35</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">16:40</div>
+            <div class="channel__item-title">Все на "Матч"!</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">17:30</div>
+            <div class="channel__item-title">Гид по играм. Футбол</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:00</div>
+            <div class="channel__item-title">Специальный репортаж</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:30</div>
+            <div class="channel__item-title">Новости</div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">18:35</div>
+            <div class="channel__item-title">Все на "Матч"!</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">19:25</div>
+            <div class="channel__item-title">Хоккей. Еврочеллендж. Прямая трансляция. Россия - Норвегия</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">22:00</div>
+            <div class="channel__item-title">Профессиональный бокс. Прямая трансляция из Москвы. Э. Трояновский (Россия) - С. </div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">00:00</div>
+            <div class="channel__item-title">Все на "Матч"!</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">00:45</div>
+            <div class="channel__item-title">Баскетбол. Евролига. Мужчины. "Олимпиакос" (Греция) - ЦСКА (Россия)</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">02:35</div>
+            <div class="channel__item-title">Баскетбол. Евролига. Мужчины. "Дарюшшафака" (Турция) - "Локомотив-Кубань" (Россия)</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" data-category="sport" class="channel__item">
+            <div class="channel__item-time">04:25</div>
+            <div class="channel__item-title">Лучшая игра с мячом</div>
+            <div class="channel__category-icon channel__category-icon_sport"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">04:55</div>
+            <div class="channel__item-title">Суд над Алленом Айверсоном</div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+      <div data-channel="5-tv" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/5.png" alt=""></div>
+          <div class="channel__name text_size_m">5 канал</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">04:05</div>
+            <div class="channel__item-title">Найти и обезвредить</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:00</div>
+            <div class="channel__item-title">Сейчас</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:10</div>
+            <div class="channel__item-title">Момент истины</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">07:00</div>
+            <div class="channel__item-title">Утро на 5</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:30</div>
+            <div class="channel__item-title">Место происшествия</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">10:00</div>
+            <div class="channel__item-title">Сейчас</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">10:30</div>
+            <div class="channel__item-title">Кодекс чести-3. 9-я серия - "Крупная рыба"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">11:25</div>
+            <div class="channel__item-title">Кодекс чести-3. 10-я серия - "Крупная рыба"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">12:00</div>
+            <div class="channel__item-title">Сейчас</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">12:30</div>
+            <div class="channel__item-title">Кодекс чести-3. 10-я серия - "Крупная рыба"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">12:45</div>
+            <div class="channel__item-title">Кодекс чести-3. 11-я серия - "Покушение на кандидата"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">13:40</div>
+            <div class="channel__item-title">Кодекс чести-3. 12-я серия - "Покушение на кандидата"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">14:30</div>
+            <div class="channel__item-title">Кодекс чести-3. 13-я серия - "Звонок с того света"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">15:25</div>
+            <div class="channel__item-title">Кодекс чести-3. 14-я серия - "Звонок с того света"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">15:30</div>
+            <div class="channel__item-title">Сейчас</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">16:00</div>
+            <div class="channel__item-title">Кодекс чести-3. 14-я серия - "Звонок с того света"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">16:45</div>
+            <div class="channel__item-title">Кодекс чести-3. 15-я серия - "Смерть на берегу моря"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">17:35</div>
+            <div class="channel__item-title">Кодекс чести-3. 16-я серия - "Смерть на берегу моря"</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">18:30</div>
+            <div class="channel__item-title">Сейчас</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">19:00</div>
+            <div class="channel__item-title">След. Последняя игра</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">19:45</div>
+            <div class="channel__item-title">След. Клон</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">20:35</div>
+            <div class="channel__item-title">След. Обстоятельства</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">21:20</div>
+            <div class="channel__item-title">След. Булочка</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">22:05</div>
+            <div class="channel__item-title">След. Мертвые партизаны</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">23:00</div>
+            <div class="channel__item-title">След. Человек-легенда</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">23:45</div>
+            <div class="channel__item-title">След. Короткое замыкание</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">00:30</div>
+            <div class="channel__item-title">След. Сапер ошибается однажды</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">01:20</div>
+            <div class="channel__item-title">Детективы. Редкая порода</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">02:05</div>
+            <div class="channel__item-title">Детективы. Домик у моря</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">02:45</div>
+            <div class="channel__item-title">Детективы. Махнем не глядя</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">03:25</div>
+            <div class="channel__item-title">Детективы. Деньги для ипотеки</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">04:05</div>
+            <div class="channel__item-title">Детективы. Захорон</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">04:40</div>
+            <div class="channel__item-title">Детективы. Выстрел в парке</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+      <div data-channel="sts" class="channel">
+        <div class="channel__head">
+          <div class="channel__pic"><img src="assets/images/channels-logo/6.png" alt=""></div>
+          <div class="channel__name text_size_m">СТС</div>
+          <div title="Добавить канал в избранные" class="channel__bookmark"><i class="icon channel__bookmark-icon"></i></div>
+        </div>
+        <div style="display: none" class="channel__content channel__content_status_past"><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">03:35</div>
+            <div class="channel__item-title">Маргоша</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">05:35</div>
+            <div class="channel__item-title">Музыка на СТС</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:00</div>
+            <div class="channel__item-title">Люди в чёрном</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">06:55</div>
+            <div class="channel__item-title">Шоу Тома и Джерри</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">07:05</div>
+            <div class="channel__item-title">Смешарики</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">07:30</div>
+            <div class="channel__item-title">Приключения Тайо</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">08:05</div>
+            <div class="channel__item-title">Зачарованные</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">09:00</div>
+            <div class="channel__item-title">Ералаш</div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">10:05</div>
+            <div class="channel__item-title">Если свекровь - монстр...</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a></div>
+        <div class="channel__content"><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">12:00</div>
+            <div class="channel__item-title">Шоу "Уральских пельменей". Медкомиссия невыполнима</div></a><a href="javascript:void(0)" class="channel__item">
+            <div class="channel__item-time">13:30</div>
+            <div class="channel__item-title">Уральские пельмени. Лучшее от Стефании-Марьяны Гурской</div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">14:00</div>
+            <div class="channel__item-title">Воронины</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a></div>
+        <div style="display: none" class="channel__content channel__content_status_future"><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">15:30</div>
+            <div class="channel__item-title">Кухня</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">17:00</div>
+            <div class="channel__item-title">Крыша мира</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">21:00</div>
+            <div class="channel__item-title">Трансформеры. Месть падших</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">23:50</div>
+            <div class="channel__item-title">Авария</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a><a href="javascript:void(0)" data-category="serial" class="channel__item">
+            <div class="channel__item-time">01:40</div>
+            <div class="channel__item-title">Выжить после</div>
+            <div class="channel__category-icon channel__category-icon_serial"></div></a><a href="javascript:void(0)" data-category="movie" class="channel__item">
+            <div class="channel__item-time">03:35</div>
+            <div class="channel__item-title">Джунгли зовут! В поисках Марсупилами</div>
+            <div class="channel__category-icon channel__category-icon_movie"></div></a></div>
+        <div class="channel__footer"><a href="javascript:void(0)" class="link text_size_s channel__show-full_js"><span class="link_decor_underline">Показать полностью</span></a></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="footer__menu list text_size_s">
+        <li class="list__item"><a href="javascript:window.print()" class="link link_decor_underline">Распечатать телепрограмму</a></li>
+        <li class="list__item"><a href="javascript:void(0)" class="link link_decor_underline">Получить телепрограмму на почту</a></li>
+        <li class="list__item"><a href="mailto:omarr@list.ru?subject=По поводу телепрограммы&amp;body=Здравствуйте Газимагомедов Омар!" class="link link_decor_underline">Обратная связь</a></li>
+      </ul>
+      <div class="footer__copyright">© Телепрограмма</div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main-min.js"></script>
+    <script src="assets/js/jBox.min.js"></script>
+  </body>
+</html>
