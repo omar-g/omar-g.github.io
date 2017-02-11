@@ -1,0 +1,85 @@
+.middle-xs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+/* styles */
+
+.main-header__info a:not(.navbar-brand) {
+  color: #676f7a;
+  text-decoration: none !important;
+  cursor: default;
+}
+
+.main-header__info-phone .icon {
+    margin-right: 10px;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.main-header__info-phone a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-header__info-link-decor {
+  border-bottom: 1px solid;
+}
+
+.main-header__info-mail {
+  text-align: right;
+}
+
+.main-header__info-mail strong {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.main-header__info-link-decor:hover {
+  cursor: pointer;
+}
+
+.main-header__info-mail .fa-envelope {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.main-header__info-mail-feedback {
+    text-align: right;
+}
+
+#header .main-header__info .navbar-default.navbar-collapsed-sm {
+  height: 80px;
+}
+
+#header .main-header__info .navbar-default.navbar-collapsed-sm > .row.middle-xs {
+  height: 80px;
+}
+
+.main-header__info .icon-boxes .icon-box {
+  margin-bottom: 0;
+}
+
+.main-header__info-address {
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

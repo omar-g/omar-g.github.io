@@ -23,6 +23,7 @@
     <!-- / required stylesheets -->
     <link href="assets/stylesheets/bootstrap/bootstrap.min.css" media="all" id="bootstrap" rel="stylesheet" type="text/css" />
     <link href="assets/stylesheets/jednotka_green.css" media="all" id="colors" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/custom.css" media="all" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
       <script src="assets/javascripts/ie/html5shiv.js" type="text/javascript"></script>
       <script src="assets/javascripts/ie/respond.min.js" type="text/javascript"></script>
@@ -34,10 +35,72 @@
         <div class="main-header__info">
           <div class='container'>
             <nav class='navbar navbar-collapsed-sm navbar-default' id='nav' role='navigation'>
-              <div class='navbar-header'>
-                <a class='navbar-brand' href='index.html'>
-                  <img alt="Jednotka" width="117" height="39" src="assets/images/logo.svg" />
-                </a>
+              <div class="row middle-xs">
+                <div class="col-sm-3">
+                  <a class='navbar-brand' href='index.html'>
+                    <img alt="Дар Эль Салам" width="220" height="46" src="assets/images/logos/logo_horiz.png" />
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="">
+                      <div class="main-header__info-address">
+                        <div class="icon-boxes">
+                          <div class="icon-box">
+                            <div class="icon icon-wrap">
+                              <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="content">
+                              <span itemprop="addressLocality">г. Москва</span>
+                              <br>
+                              <span itemprop="streetAddress">Смоленский бульвар д. 22/14</span>
+                            </div>
+                            <div class="">
+                              <div class="icon icon-wrap">
+                                <i class="fa fa-subway"></i>
+                              </div>
+                              <div class="content">
+                                <span itemprop="streetAddress">м. Парк Культуры, м. Смоленская</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="main-header__info-phone">
+                    <div class="icon-boxes">
+                      <div class="icon-box">
+                        <div class="icon icon-wrap">
+                          <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="content">
+                          <a itemprop="telephone" href="tel:+74951338208">+7 (495) 133-82-08</a>
+                          <br>
+                          <a itemprop="telephone" href="tel:+79253335777">+7 (925) 333-57-77</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="main-header__info-mail">
+                    <div class="icon-boxes">
+                      <div class="icon-box">
+                        <div class="icon icon-wrap">
+                          <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="content">
+                          <div class="main-header__info-mail-feedback">
+                            <strong><a class="main-header__info-link-decor" href="javascript:void(0)">Написать нам</a></strong>
+                            <br>
+                            <a itemprop="email" href="mailto:admin@darelsalam.ru">admin@darelsalam.ru</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </nav>
           </div>
@@ -569,6 +632,7 @@
     <script src="assets/javascripts/plugins/nivo_lightbox/nivo-lightbox.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/plugins/cycle/jquery.cycle.all.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/jednotka.js" type="text/javascript"></script>
+    <script src="assets/javascripts/custom.js" type="text/javascript"></script>
     
   </body>
 </html>

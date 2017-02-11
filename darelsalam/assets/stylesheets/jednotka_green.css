@@ -6548,7 +6548,10 @@ body.boxed #scroll-to-top {
     background-color: rgba(5, 13, 37, 0.83);
   }
   .main-header__info {
-    background-color: #000;
+    background-color: #fff;
+  }
+  #header .main-header__info .navbar-default.navbar-collapsed-sm {
+    border-bottom: none;
   }
   #header .navbar {
     height: 90px; }
