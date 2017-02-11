@@ -6497,7 +6497,7 @@ body {
         max-width: 1230px; } }
 
 #main-content {
-  padding: 70px 0 80px 0;
+  padding: 30px 0 80px 0;
   background-color: white; }
 
 body.boxed #scroll-to-top {
@@ -11099,10 +11099,11 @@ html.no-touch body.countdown-page {
     margin-right: auto; }
     html.no-touch body.countdown-page #wrapper .container {
       vertical-align: middle;
+      background: rgba(5, 13, 37, 0.5);
       display: table-cell; }
 
 body.countdown-page {
-  background: url("../images/bg_fullsize.jpg") no-repeat center center fixed;
+  background: url("../images/turkish_mosque.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
