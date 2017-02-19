@@ -24,7 +24,7 @@
       <script src="assets/javascripts/ie/respond.min.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  <body class='homepage'>
+  <body class=''>
     <div id='wrapper'>
       <header id='header' class="main-header">
         <div class="main-header__info">
@@ -113,14 +113,14 @@
               </div>
               <div class='collapse navbar-collapse navbar-header-collapse'>
                 <ul class='nav navbar-nav navbar-right'>
-                  <li class="active">
+                  <li>
                     <a href='index.html'>
                       <span>
                         Главная
                       </span>
                     </a>
                   </li>
-                  <li class='dropdown'>
+                  <li class='active dropdown'>
                     <a class='dropdown-toggle' data-delay='50' data-hover='dropdown' data-toggle='dropdown' href='#'>
                       <span>
                         Хадж
@@ -128,7 +128,7 @@
                       </span>
                     </a>
                     <ul class='dropdown-menu' role='menu'>
-                      <li class=''>
+                      <li class='active'>
                         <a href='hajj.html'>Хадж 2017</a>
                       </li>
                       <li class=''>
@@ -285,160 +285,101 @@
         </div>
       </header>
       <div id='main' role='main'>
-        <!-- / carousel blur -->
         <div class='hero-carousel carousel-blur carousel-blur-arrows carousel-blur-pagination flexslider' id='carousel-example-1'>
           <ul class='slides'>
             <li class='item'>
               <div class="slides-item__absolute">
                 <img src="assets/images/main_slider/slide-image-1.png" alt="">
               </div>
-            </li>
-            <li class='item'>
-              <div class="slides-item__absolute">
-                <img src="assets/images/main_slider/slide-image-2.png" alt="">
+              <div class='container'>
+                <div class='row pos-rel'>
+                  <div class='col-sm-12 animate'>
+                    <h1 class='big fadeInDownBig animated'>Хадж 2017</h1>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
         </div>
         <div id='main-content'>
           <div class='container'>
-            <div class='panels-wrapper'>
-              <div class='row panels'>
-                <div class='col-sm-5 col-sm-offset-1 panel-item'>
-                  <div class="panel-item__top-title">
-                    <a href="javascript:void(0)">Хадж</a>
-                  </div>
-                  <div class='panel panel-image'>
-                    <div class='panel-heading'><img class="img-responsive-sm" alt="Хадж" width="458" height="137" src="assets/images/panels/hajj.jpg" /></div>
-                    <div class='panel-body'>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>10 ночей Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              5 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              5 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>5 ночей Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              2 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              3 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>3 ночи Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              1 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              2 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <p class="text-center">Выберите интересующую вас программу,
-                      <br> чтобы узнать подробности.</p>
+            <div class='row'>
+              <div class='col-md-push-9 col-sm-push-8 col-sm-4 col-md-3'>
+                <nav class='sidebar sidebar-fixed'>
+                  <button class='btn btn-block btn-contrast sidebar-toggle' data-target='.sidebar-collapse' data-toggle='collapse' type='button'>
+                    <span class='sr-only'>Toggle navigation</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                  </button>
+                  <div class='sidebar-collapse collapse'>
+                    <div class='box'>
+                      <h3 class='title'>Info</h3>
+                      <ul class='list-unstyled list-padded'>
+                        <li>
+                          <i class='fa fa-user text-contrast fa fa-fixed-width'></i>
+                          Company name
+                        </li>
+                        <li>
+                          <i class='fa fa-calendar text-contrast fa fa-fixed-width'></i>
+                          September 2013
+                        </li>
+                      </ul>
                     </div>
+                    <div class='box'>
+                      <h3 class='title'>Services</h3>
+                      <ul class='list-unstyled list-padded'>
+                        <li>
+                          <i class='fa fa-check text-contrast fa fa-fixed-width'></i>
+                          Webdesign
+                        </li>
+                        <li>
+                          <i class='fa fa-check text-contrast fa fa-fixed-width'></i>
+                          HTML / CSS
+                        </li>
+                        <li>
+                          <i class='fa fa-check text-contrast fa fa-fixed-width'></i>
+                          Marketing
+                        </li>
+                        <li>
+                          <i class='fa fa-check text-contrast fa fa-fixed-width'></i>
+                          Identity
+                        </li>
+                      </ul>
+                    </div>
+                    <div class='box'><a class="btn btn-contrast btn-bordered btn-block" href="#">Show project</a></div>
                   </div>
-                </div>
-                <div class='col-sm-5 panel-item'>
-                  <div class="panel-item__top-title">
-                    <a href="javascript:void(0)">Умра</a>
-                  </div>
-                  <div class='panel panel-image'>
-                    <div class='panel-heading'><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="assets/images/panels/umra.jpg" /></div>
-                    <div class='panel-body'>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>10 ночей Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              5 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              5 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>5 ночей Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              2 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              3 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0)" class="panel-body__list-item">
-                        <div class="row">
-                          <div class="col-xs-2">
-                            <div class="panel-body__list-item-icon">
-                              <img class="img-responsive" src="assets/images/icons/kaaba-mini.jpg" alt="">
-                            </div>
-                          </div>
-                          <div class="col-xs-10">
-                            <h3 class='panel-title'>3 ночи Рамадана</h3>
-                            <div class="panel-body__list-item-text">
-                              1 ночей в Movenpick Hotel (5 звёзд) - Медина
-                              <br>
-                              2 ночей в Al Shohada Hotel (5 звёзд) - Мекка
-                              <br>
-                              С 6 по 17 июля 2013 г. От 1895 долл.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <p class="text-center">Выберите интересующую вас программу,
-                      <br> чтобы узнать подробности.</p>
+                </nav>
+              </div>
+              <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'>
+                <div class='row'>
+                  <div class='col-sm-12'>
+                    <h2 class='no-mg-t'>Полный спектр услуг для совершающих Хадж в 2017 г.</h2>
+                    <p class='lead lead-sm'>Международная компания «Дар эль Салам» обеспечивает полный спектр услуг, для совершающих Хадж и Умру из США и Канады. Мы также обслуживаем клиентов по всему миру, включая Египет, Иорданию, Россию, Индонезию, Пакистан, Индию и другие страны. С момента основания в 1985 году мы обслужили десятки тысяч клиентов посредством наших представительств в Нью-Йорке, Лос-Анджелесе и Хьюстоне, а также в Торонто, Москве и в Каире. Кроме того, мы имеем представительства более чем в 30 городах мира, чтобы иметь возможность обслуживать наших клиентов. В 2009 году компания «Дар эль Салам» создала дочернюю компанию под названием «Signature Getaways», обеспечивающая поездки в Турцию, Египет, Испанию, Объединенные Арабские Эмираты и Марокко с целью ознакомления с исламским культурным наследием.</p>
+                    <div class='row'>
+                      <div class='col-sm-12'>
+                      </div>
+                    </div>
+                    <div class="row middle-xs">
+                      <div class="col-sm-3">
+                        <img class="img-responsive pull-left" alt="«Хадж с Дар эль Салам»" width="250" height="307" src="http://islam.ru/sites/foto/hadj_darelsalam.jpg" />
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Мы предоставляем полный спектр услуг для совершающих Хадж. Нашей задачей является – ваша полная подготовка к Хаджу, сопровождение вас во время всей поездки и предоставление вам консультаций по обрядам хаджа, во время всего путешествия.</p>
+                        <p>Все программы «Дар эль Салам» включают в себя лучшие пятизвездочные гостиницы Мекки, Медины и Джидды, в непосредственной близости от Масджид аль-Харам. Особые отношения которые сложились с менеджментом этих гостиниц позволяют Дар эль Салам предоставлять лучшие условия для вашего проживания в этих гостиницах. Hilton, Interkontinental, Movenpik, Swissotel и др. гостиницы Мекки и Медины всегда рады паломникам «Дар эль Салам».</p>
+                        <p>Особенностью программ «Дар эль Салам», является экслюзивный лагерь «Dar el Salam Camp» в Мина и Арфат, на расстоянии 100 метров от Джамарат (место бросания камней). В лагерере «Дар эль Салам», созданы комфортные условия для проведения богослужения. Наш лагерь по праву признан лучшим в Мина и в местности Арафат.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        Наше обслуживание предусматривает лучшие условия проживания в гостиницах, комфортное наземное передвижение, лучшее питание, лучший сервис в Мина и Арафат, административное и религиозное сопровождение во время всего путешествия. Мы предлагаем программы поездок в Хадж разной категории: от класса «Комфорт» до Высшей категории.
+
+                        <hr class='hr-half'>
+                        <p><b>Свяжитесь с нами для более подробной информации:</b></p>
+                        <p>Москва, Смоленский бульвар 22/14</p>
+                        <p>+7 (495)133-82-01, +7(926)-325-77-22</p>
+                        <p>hadjumra@gmail.com</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -585,7 +526,6 @@
     <script src="assets/javascripts/plugins/nivo_lightbox/nivo-lightbox.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/plugins/cycle/jquery.cycle.all.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/jednotka.js" type="text/javascript"></script>
-    <script src="assets/javascripts/custom.js" type="text/javascript"></script>
     
   </body>
 </html>

@@ -134,6 +134,19 @@
   max-height: 150px;
 }
 
+#main-content-header {
+  background: url('../../assets/images/main_slider/slide-image-1.png') 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.carousel-blur .big {
+  margin-top: 140px;
+  background: rgba(5, 13, 37, 0.83);
+  display: inline-block;
+  padding: 0 30px;
+}
+
 
 
 
