@@ -147,6 +147,23 @@
   padding: 0 30px;
 }
 
+.list-group-item__category-link a {
+  color: #555;
+}
+
+.list-group-item__submenu {
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+.list-group-item.active .list-group-item__submenu a {
+  color: #fff;
+}
+
+.list-group-item__submenu-item {
+  margin-bottom: 5px;
+}
+
 
 
 
