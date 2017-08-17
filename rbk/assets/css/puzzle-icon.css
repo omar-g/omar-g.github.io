@@ -1,0 +1,298 @@
+.puzzle-icon {
+    display: inline-block;
+}
+
+i.puzzle-icon {
+    font-style: normal;
+}
+
+.puzzle-icon svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.puzzle-icon_train-progress-check {
+    width: 10px;
+    height: 9px;
+}
+
+.puzzle-icon_teacher-second-play-video {
+    width: 25px;
+    height: 23px;
+}
+
+.puzzle-icon_course-time {
+    width: 13px;
+    height: 13px;
+}
+
+.puzzle-icon_plus-green {
+    width: 12px;
+    height: 12px;
+}
+
+.puzzle-icon_close {
+    width: 10px;
+    height: 10px;
+}
+
+.puzzle-icon_course-lessons {
+    width: 14px;
+    height: 12px;
+}
+
+.puzzle-icon_course-exers {
+    width: 13px;
+    height: 13px;
+}
+
+.puzzle-icon_course-teachers {
+    width: 13px;
+    height: 13px;
+}
+
+.puzzle-icon_course-exams {
+    width: 15px;
+    height: 15px;
+}
+
+.puzzle-icon_course-words {
+    width: 15px;
+    height: 15px;
+}
+
+.puzzle-icon_course-watch {
+    width: 15px;
+    height: 17px;
+}
+
+.puzzle-icon_teacher-second-pause-video {
+    width: 16px;
+    height: 23px;
+}
+
+.puzzle-icon_pencil {
+    width: 11px;
+    height: 11px;
+}
+
+.puzzle-icon_circle-arrow-bottom {
+    width: 35px;
+    height: 35px;
+}
+
+.puzzle-icon__arrow-right {
+    width: 11px;
+    height: 17px;
+}
+
+.puzzle-icon_thumb-down,
+.puzzle-icon_thumb-up {
+    width: 16px;
+    height: 16px;
+}
+
+.puzzle-icon_text-left {
+    width: 13px;
+    height: 10px;
+}
+
+.puzzle-icon_mute {
+    width: 17px;
+    height: 17px;
+}
+
+.puzzle-icon_green-speaker {
+    width: 15px;
+    height: 12px;
+}
+
+.puzzle-icon_speaker {
+    width: 24px;
+    height: 22px;
+}
+
+.puzzle-icon_figure-ear {
+    width: 11px;
+    height: 13px;
+}
+
+.puzzle-icon_figure-ear-back {
+    width: 13px;
+    height: 55px;
+}
+
+.puzzle-icon_block-slide-arrow {
+    width: 14px;
+    height: 9px;
+}
+
+.puzzle-icon_blocked {
+    width: 13px;
+    height: 19px;
+}
+
+.puzzle-icon_mobile-services {
+    width: 64px;
+    height: 64px;
+}
+
+.puzzle-icon_teacher-dictionary {
+    width: 19px;
+    height: 16px;
+}
+
+.puzzle-icon_native {
+    width: 12px;
+    height: 13px;
+}
+
+.puzzle-icon_errors {
+    width: 15px;
+    height: 15px;
+}
+
+.puzzle-icon_exercise {
+    width: 19px;
+    height: 19px;
+}
+
+.puzzle-icon_sentence {
+    width: 13px;
+    height: 13px;
+}
+
+.puzzle-icon_download {
+    width: 16px;
+    height: 14px;
+}
+
+.puzzle-icon_favorite {
+    width: 16px;
+    height: 14px;
+}
+
+.puzzle-icon_favorite {
+    width: 15px;
+    height: 15px;
+}
+
+.puzzle-icon_message {
+    width: 22px;
+    height: 17px;
+}
+
+.puzzle-icon_triangle {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #fff;
+}
+
+.puzzle-icon_flower {
+    width: 18px;
+    height: 21px;
+}
+
+.puzzle-icon_play-video-round {
+    width: 104px;
+    height: 104px;
+}
+
+.puzzle-icon_arrow-down {
+    width: 11px;
+    height: 7px;
+}
+
+.puzzle-icon_round-question {
+    width: 20px;
+    height: 20px;
+}
+
+.puzzle-icon_repeat {
+    width: 26px;
+    height: 24px;
+}
+
+.puzzle-icon_book-clock {
+    width: 21px;
+    height: 24px;
+}
+
+.puzzle-icon_search {
+    width: 16px;
+    height: 16px;
+}
+
+.puzzle-icon_fill_white > svg path {
+    fill: #fff;
+}
+
+.puzzle-icon_fill_blue > svg path {
+    fill: #1da5de;
+}
+
+.puzzle-icon_fill_black > svg path {
+    fill: #333;
+}
+
+.puzzle-icon_fill_green > svg path {
+    fill: #65b862;
+}
+
+.puzzle-icon_fill_gray > svg path {
+    fill: #d8d8d8;
+}
+
+.puzzle-icon__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.puzzle-icon__wrapper .puzzle-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
