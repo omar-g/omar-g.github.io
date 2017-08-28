@@ -129,6 +129,174 @@ a.rbk-header__menu-item.is-active {
   margin-top: -45px;
 }
 
+.rbk-title {
+  font-size: 38px;
+  color: #252B33;
+  line-height: 57px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.rbk-benefits-item {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.rbk-benefits-item-icon {
+  margin-bottom: 20px;
+}
+
+.rbk-benefits-item-title {
+  font-size: 28px;
+  color: #252B33;
+  line-height: 34px;
+  padding-right: 50px;
+}
+
+.rbk-benefits-item-text {
+  margin-top: 23px;
+}
+
+.rbk-benefits-item-text-one {
+  font-size: 16px;
+  color: #7c8085;
+  line-height: 28px;
+  position: relative;
+}
+
+.rbk-benefits-item-text-one::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  background-color: #333;
+}
+
+.rbk-benefits-item.is-blue .rbk-benefits-item-text-one::before {
+  background-color: #2386db;
+}
+
+.rbk-benefits-item.is-green .rbk-benefits-item-text-one::before {
+  background-color: #2abad0;
+}
+
+.rbk-benefits-item.is-yellow .rbk-benefits-item-text-one::before {
+  background-color: #f9b002;
+}
+
+.rbk-benefits__footer-text {
+  color: #7c8085;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.rbk-benefits__footer {
+  padding: 40px 80px 0;
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.rbk-benefits__footer::before {
+  content: '';
+  position: absolute;
+  width: 52%;
+  height: 2px;
+  background-color: #e6eaec;
+  left: 50%;
+  top: 0;
+  margin-left: -26%;
+}
+
+.rbk-examples__item {
+  padding-right: 18px;
+}
+
+.rbk-examples__item-pic,
+.rbk-examples__item-pic img {
+  width: 100%;
+}
+
+.rbk-examples__item-title {
+  font-size: 20px;
+  color: #00a9a8;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+.rbk-examples__item-text {
+  font-size: 16px;
+  color: #7c8085;
+}
+
+.rbk-examples__download {
+  margin-top: 35px;
+  display: inline-block;
+}
+
+.rbk-examples__download-link {
+  font-weight: 600;
+  font-size: 20px;
+  color: #00a9a8;
+  margin-left: 13px;
+  margin-right: 4px;
+}
+
+.rbk-examples__download-text {
+  font-size: 16px;
+  color: #7c8085;
+}
+
+.rbk-numbers {
+  margin-top: 40px;
+  min-height: 259px;
+  padding: 65px 0;
+  background: url('assets/img/gray_back.png') 50% 0 repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rbk-numbers__item {
+  max-width: 180px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 75px;
+}
+
+.rbk-numbers__item:last-child {
+  margin-right: 0;
+}
+
+.rbk-numbers__title {
+  font-weight: 600;
+  font-size: 72px;
+  color: #333;
+  line-height: 87px;
+}
+
+.rbk-numbers__item.is-blue .rbk-numbers__title {
+  color: #2386db;
+}
+
+.rbk-numbers__item.is-green .rbk-numbers__title {
+  color: #2abad0;
+}
+
+.rbk-numbers__info {
+  font-weight: 600;
+  font-size: 16px;
+  color: #252B33;
+  line-height: 20px;
+}
+
 
 
 
