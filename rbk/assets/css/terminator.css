@@ -1,0 +1,57 @@
+
+.rbk-terminator {
+  font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #f3f6f8 url('assets/img/terminator-bg.png') 50% 0 no-repeat;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rbk-terminator__message {
+  text-align: center;
+  font-size: 24px;
+  color: #00a9a8;
+  margin-bottom: 10vh;
+}
+
+.rbk-terminator__logo {
+  margin-bottom: 5vh;
+}
+
+.rbk-terminator__logo .puzzle-icon {
+  max-width: 100%;
+}
+
+.rbk-terminator__content {
+  padding-left: 45px;
+}
+
+.rbk-terminator__content-text {
+  line-height: 29px;
+  padding-bottom: 3.5vh;
+  margin-bottom: 3vh;
+  border-bottom: 2px solid #c8d0d6;
+}
+
+.rbk-terminator-address {
+  line-height: 25px;
+  font-size: 16px;
+  margin-bottom: 3vh;
+}
+
+.rbk-terminator__social-item {
+  margin-right: 15px;
+}
+
+/*Extra small devices (phones)*/
+
+@media only screen and (max-width : 767px) {
+
+  .rbk-terminator {
+    padding-top: 8vh;
+  }
+
+}

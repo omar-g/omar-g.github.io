@@ -1,0 +1,28 @@
+.more-button {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 37px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.more-button_style_white,
+a.more-button_style_white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.more-button_style_white:hover {
+    background-color: #fff;
+    color: #364155;
+}
+
+.more-button_size_m {
+    padding: 17px 48px 16px;
+    font-size: 15px;
+    min-width: 180px;
+}
