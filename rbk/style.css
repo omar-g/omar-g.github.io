@@ -445,6 +445,15 @@ a.rbk-header__menu-item.is-active {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 100px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .4;
+}
+
+.rbk-customers__item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .rbk-footer {
