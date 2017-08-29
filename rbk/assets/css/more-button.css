@@ -21,8 +21,18 @@ a.more-button_style_white {
     color: #364155;
 }
 
+.more-button_style_gray,
+a.more-button_style_gray {
+    border-color: #dae1e7;
+    color: #252b33;
+}
+
+.more-button_style_gray:hover {
+    background-color: #dae1e7;
+    color: #252b33;
+}
+
 .more-button_size_m {
     padding: 17px 48px 16px;
     font-size: 15px;
-    min-width: 180px;
 }
