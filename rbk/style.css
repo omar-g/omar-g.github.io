@@ -96,6 +96,27 @@ a.rbk-header__menu-item.is-active {
   line-height: 32px;
 }
 
+.rbk-main-slider__frame {
+  width: 100%;
+  height: 405px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.rbk-main-slider__slidee {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
+.rbk-main-slider__item {
+  float: left;
+  padding: 0;
+  width: 1160px;
+  height: 100%;
+}
+
 .rbk-main-slider__item .more-button {
   margin-top: 20px;
 }
@@ -104,7 +125,8 @@ a.rbk-header__menu-item.is-active {
   color: #08a0a1;
 }
 
-.rbk-main-slider__paginator-item {
+.rbk-main-slider__paginator > li,
+.rbk-projects__slider-paginator > li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
@@ -113,12 +135,14 @@ a.rbk-header__menu-item.is-active {
   width: 9px;
   height: 9px;
   cursor: pointer;
+  text-indent: -9999px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.rbk-main-slider__paginator-item.active {
+.rbk-main-slider__paginator > li.active,
+.rbk-projects__slider-paginator > li.active {
   cursor: default;
   background-color: #00a9a8;
   border-color: #00a9a8;
@@ -221,22 +245,11 @@ a.rbk-header__menu-item.is-active {
   width: 100%;
 }
 
-.rbk-examples__item-title {
-  font-size: 20px;
-  color: #00a9a8;
+.rbk-examples__slider .rbk-projects__slider-item-title {
   text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 19px;
-}
-
-.rbk-examples__item-text {
-  font-size: 16px;
-  color: #7c8085;
 }
 
 .rbk-examples__download {
-  margin-top: 35px;
   display: inline-block;
 }
 
@@ -311,15 +324,28 @@ a.rbk-header__menu-item.is-active {
   text-align: center;
 }
 
+.rbk-projects__slider-frame {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.rbk-projects__slider-slidee {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
 .rbk-projects__slider-item {
   font-size: 18px;
   background: #fff;
-  box-shadow: 0 13px 63px 0 #B1BECA;
   width: 361px;
   display: inline-block;
   vertical-align: top;
-  margin-right: 35px;
+  margin-right: 34px;
   text-align: left;
+  border: 1px solid #eaeaea;
 }
 
 .rbk-projects__slider-item:last-child {
@@ -376,6 +402,7 @@ a.rbk-header__menu-item.is-active {
 .rbk-news__slider .rbk-projects__slider-item {
   -webkit-box-shadow: none;
   box-shadow: none;
+  border: none;
 }
 
 .rbk-projects__slider-item-date {
