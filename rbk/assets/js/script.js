@@ -1,6 +1,6 @@
 
 // menu toggle
-$('body').on('touchstart', '.rbk-header__menu-mobile-icon', function() {
+$('body').on('click', '.rbk-header__menu-mobile-icon', function() {
   $(this).parents('.rbk-header__menu').find('.rbk-header__menu-list').slideToggle(200);
 });
 

@@ -45,6 +45,7 @@ body {
 }
 
 .rbk-header__menu-mobile-icon {
+  cursor: pointer;
   display: none;
 }
 
@@ -1097,6 +1098,7 @@ a.rbk-header__menu-item.is-active {
 
   .rbk-main-slider__item {
     width: 343px;
+    margin-right: 30px;
   }
 }
 
@@ -1109,6 +1111,7 @@ a.rbk-header__menu-item.is-active {
 
   .rbk-main-slider__item {
     width: 393px;
+    margin-right: 30px;
   }
 }
 
