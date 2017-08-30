@@ -1,4 +1,17 @@
 
+// menu toggle
+$('body').on('click', '.rbk-header__menu-mobile-icon', function() {
+  $(this).parents('.rbk-header__menu').find('.rbk-header__menu-list').slideToggle(200);
+});
+
+$('body').on('click', function(event) {
+  if ($(event.target).parents('.rbk-header__menu').length) {
+    return;
+  }
+  $('.rbk-header__menu-list').slideUp(200);
+});
+
+
 // top search toggle
 $('body').on('click', '.rbk-header__search_js_click', function() {
   $(this).parents('.rbk-header').find('.rbk-header__search-form').css('display', '');
