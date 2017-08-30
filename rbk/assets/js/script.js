@@ -49,7 +49,7 @@ $('body').on('click', '.rbk-header__search-form-close_js_click', function() {
 
     // Cycling
     cycleBy: 'items',
-    cycleInterval: 5000,
+    cycleInterval: 10000,
     pauseOnHover: 1,
   });
 }());
