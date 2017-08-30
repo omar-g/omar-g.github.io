@@ -8,8 +8,13 @@ $('body').on('click', function(event) {
   if ($(event.target).parents('.rbk-header__menu').length) {
     return;
   }
-  $('.rbk-header__menu-list').slideUp(200);
+  if ($('.rbk-header__menu-mobile-icon').is(':visible')) {
+    $('.rbk-header__menu-list').slideUp(200);
+  }
 });
+
+var frameWidth = $('.rbk-main-slider__frame').css('width');
+$('.rbk-main-slider__item').css('width', frameWidth);
 
 
 // top search toggle
