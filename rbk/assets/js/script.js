@@ -1,4 +1,14 @@
 
+// top search toggle
+$('body').on('click', '.rbk-header__search_js_click', function() {
+  $(this).parents('.rbk-header').find('.rbk-header__search-form').css('display', '');
+});
+
+$('body').on('click', '.rbk-header__search-form-close_js_click', function() {
+  $(this).parents('.rbk-header').find('.rbk-header__search-form').css('display', 'none');
+});
+
+
 // main slider
 (function () {
   var $frame = $('#mainSliderFrame');
