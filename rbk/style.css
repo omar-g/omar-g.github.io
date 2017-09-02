@@ -1260,7 +1260,7 @@ body.is-rbk_modal_open {
 @media only screen and (max-width : 767px) {
 
   .rbk-modal__content {
-    width: 320px;
+    width: 100vw;
   }
 
   .rbk-team__modal-slider-paginator {
@@ -1273,7 +1273,7 @@ body.is-rbk_modal_open {
   }
 
   .rbk-team__modal-slider-item {
-    width: 280px;
+    width: calc(100vw - 40px);
     height: auto;
   }
 
