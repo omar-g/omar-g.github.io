@@ -133,7 +133,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="1">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -146,7 +146,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="2">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -161,7 +161,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="3">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="4">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -187,7 +187,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="5">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -200,7 +200,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="rbk-team__person">
+        <div class="rbk-team__person" data-item="6">
           <div class="rbk-team__person-ava">
             <img src="assets/img/temp/avatar.png" alt="">
           </div>
@@ -335,13 +335,23 @@
   </div>
 </footer>
 
-<div class="rbk-modal">
+<div class="rbk-modal" style="display: none;">
   <div class="rbk-modal__wrap">
     <div id="teamPersonModal" class="rbk-modal__content">
+      <i class="rbk-modal__close puzzle-icon" style="width: 30px; height: 30px;">
+        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#00A9A8" d="M0 0h30v30H0z"/>
+            <g stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 8L9 22M9 8l14 14"/>
+            </g>
+          </g>
+        </svg>
+      </i>
       <div class="rbk-team__modal-slider">
         <div id="teamPersonSlider" class="rbk-team__modal-slider-frame">
           <div class="rbk-team__modal-slider-slidee">
-            <div class="rbk-team__modal-slider-item">
+            <div class="rbk-team__modal-slider-item" data-person="1">
               <div class="rbk-team__modal-avatar puzzle_va_top">
                 <img src="assets/img/temp/avatar.png" alt="">
               </div>
@@ -370,13 +380,13 @@
                 </div>
               </div>
             </div>
-            <div class="rbk-team__modal-slider-item">
+            <div class="rbk-team__modal-slider-item" data-person="2">
               <div class="rbk-team__modal-avatar puzzle_va_top">
                 <img src="assets/img/temp/avatar.png" alt="">
               </div>
               <div class="rbk-team__modal-info puzzle_va_top">
                 <div class="rbk-team__modal-name">
-                  2 Антон Латуш
+                  Михайэль Штан
                 </div>
                 <div class="rbk-team__modal-skills">
                   <div class="rbk-team__modal-skill">
@@ -399,13 +409,100 @@
                 </div>
               </div>
             </div>
-            <div class="rbk-team__modal-slider-item">
+            <div class="rbk-team__modal-slider-item" data-person="3">
               <div class="rbk-team__modal-avatar puzzle_va_top">
                 <img src="assets/img/temp/avatar.png" alt="">
               </div>
               <div class="rbk-team__modal-info puzzle_va_top">
                 <div class="rbk-team__modal-name">
-                  3 Антон Латуш
+                  Степан Вивчаренко
+                </div>
+                <div class="rbk-team__modal-skills">
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Образование:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      — Военно-космическая Академия им А.Ф. Можайского в 2006 г.,
+                      — ФГУП Северо-Западная Академия государственной службы при президенте РФ в 2010 г.
+                    </div>
+                  </div>
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Опыт:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      Более 10 лет опыта работы по реализации проектов под ключ, в сегментах коммерческого и промышленного строительства.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rbk-team__modal-slider-item" data-person="4">
+              <div class="rbk-team__modal-avatar puzzle_va_top">
+                <img src="assets/img/temp/avatar.png" alt="">
+              </div>
+              <div class="rbk-team__modal-info puzzle_va_top">
+                <div class="rbk-team__modal-name">
+                  Ирина Баранова
+                </div>
+                <div class="rbk-team__modal-skills">
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Образование:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      — Военно-космическая Академия им А.Ф. Можайского в 2006 г.,
+                      — ФГУП Северо-Западная Академия государственной службы при президенте РФ в 2010 г.
+                    </div>
+                  </div>
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Опыт:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      Более 10 лет опыта работы по реализации проектов под ключ, в сегментах коммерческого и промышленного строительства.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rbk-team__modal-slider-item" data-person="5">
+              <div class="rbk-team__modal-avatar puzzle_va_top">
+                <img src="assets/img/temp/avatar.png" alt="">
+              </div>
+              <div class="rbk-team__modal-info puzzle_va_top">
+                <div class="rbk-team__modal-name">
+                  Алексей Федоров
+                </div>
+                <div class="rbk-team__modal-skills">
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Образование:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      — Военно-космическая Академия им А.Ф. Можайского в 2006 г.,
+                      — ФГУП Северо-Западная Академия государственной службы при президенте РФ в 2010 г.
+                    </div>
+                  </div>
+                  <div class="rbk-team__modal-skill">
+                    <div class="rbk-team__modal-skill-title">
+                      Опыт:
+                    </div>
+                    <div class="rbk-team__modal-skill-text">
+                      Более 10 лет опыта работы по реализации проектов под ключ, в сегментах коммерческого и промышленного строительства.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rbk-team__modal-slider-item" data-person="6">
+              <div class="rbk-team__modal-avatar puzzle_va_top">
+                <img src="assets/img/temp/avatar.png" alt="">
+              </div>
+              <div class="rbk-team__modal-info puzzle_va_top">
+                <div class="rbk-team__modal-name">
+                  Виктор Сенаторов
                 </div>
                 <div class="rbk-team__modal-skills">
                   <div class="rbk-team__modal-skill">
@@ -444,6 +541,7 @@
       </div>
     </div>
   </div>
+  <div class="rbk-modal__overlay"></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

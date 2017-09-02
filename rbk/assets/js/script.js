@@ -8,7 +8,6 @@ var personSlider = new Sly($('#teamPersonSlider'), {
   activateMiddle: 1,
   mouseDragging: 1,
   touchDragging: 1,
-  releaseSwing: 1,
   startAt: 0,
   scrollBy: 1,
   speed: 400,
@@ -22,6 +21,29 @@ var personSlider = new Sly($('#teamPersonSlider'), {
   prev: $('.rbk-team__modal-slider .rbk-team__modal-slider-left'),
   next: $('.rbk-team__modal-slider .rbk-team__modal-slider-right'),
 }).init();
+
+
+function rbkModalOpen() {
+  $('.rbk-modal').css('display', '');
+  $('body').addClass('is-rbk_modal_open');
+  personSlider.reload();
+}
+
+function rbkModalClose() {
+  $('.rbk-modal').css('display', 'none');
+  $('body').removeClass('is-rbk_modal_open');
+}
+
+$('.rbk-team__person').on('click', function() {
+  var item = $(this).data('item');
+  rbkModalOpen();
+  $('#teamPersonSlider').sly('toCenter', item-1);
+});
+
+$('body').on('click', '.rbk-modal__close, .rbk-modal__overlay', function(event) {
+  event.stopPropagation();
+  rbkModalClose();
+});
 
 
 // // modal team person
