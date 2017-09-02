@@ -1,5 +1,40 @@
+// news item slider
+(function () {
+  var $frame = $('.rbk-news-item__slider-frame');
+  var $wrap  = $frame.parent();
+
+  // Call Sly on frame
+  $frame.sly({
+    horizontal: 1,
+    itemNav: 'forceCentered',
+    smart: 1,
+    activateMiddle: 1,
+    activateOn: 'click',
+    touchDragging: 1,
+    releaseSwing: 1,
+    startAt: 0,
+    scrollBy: 1,
+    speed: 300,
+    elasticBounds: 1,
+    easing: 'easeOutExpo',
+    dragHandle: 1,
+    dynamicHandle: 1,
+    clickBar: 1,
+    activatePageOn: 'click'
+  });
+
+  $('body').on('click', '.rbk-news-item__slider-preview-list-item', function() {
+    var item = $(this).data('item');
+    $(this).parents('.rbk-news-item__slider').find('.rbk-news-item__slider-frame').sly('toCenter', item-1);
+  });
+}());
+
+
+
 // team person slider
 
+
+if ($('#teamPersonSlider').length) {
 var personSlider = new Sly($('#teamPersonSlider'), {
   slidee: $('.rbk-team__modal-slider .rbk-team__modal-slider-slidee'),
   horizontal: 1,
@@ -22,6 +57,7 @@ var personSlider = new Sly($('#teamPersonSlider'), {
   prev: $('.rbk-team__modal-slider .rbk-team__modal-slider-left'),
   next: $('.rbk-team__modal-slider .rbk-team__modal-slider-right'),
 }).init();
+}
 
 
 function rbkModalOpen() {
