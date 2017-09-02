@@ -1,3 +1,14 @@
+
+// gallery
+if (typeof lightbox !== 'undefined') {
+  lightbox.option({
+    showImageNumberLabel: false,
+    disableScrolling: true,
+    resizeDuration: 200
+  });
+}
+
+
 // only mobile top menu click
 
 $('body').on('click', '.rbk-submenu__list-mobile-title', function() {
