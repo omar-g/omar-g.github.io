@@ -1,3 +1,54 @@
+// team person slider
+
+var personSlider = new Sly($('#teamPersonSlider'), {
+  slidee: $('.rbk-team__modal-slider .rbk-team__modal-slider-slidee'),
+  horizontal: 1,
+  itemNav: 'forceCentered',
+  smart: 1,
+  activateMiddle: 1,
+  mouseDragging: 1,
+  touchDragging: 1,
+  releaseSwing: 1,
+  startAt: 0,
+  scrollBy: 1,
+  speed: 400,
+  elasticBounds: 1,
+  easing: 'easeOutExpo',
+  dragHandle: 1,
+  dynamicHandle: 1,
+  clickBar: 1,
+  pagesBar: $('.rbk-team__modal-slider .rbk-main-slider__paginator'),
+  activatePageOn: 'click',
+  prev: $('.rbk-team__modal-slider .rbk-team__modal-slider-left'),
+  next: $('.rbk-team__modal-slider .rbk-team__modal-slider-right'),
+}).init();
+
+
+// // modal team person
+// var teamPersonModal = new jBox('Modal', {
+//     trigger: 'click',
+//     attach: '.rbk-team__person',
+//     content : $('#teamPersonModal'),
+//     addClass : 'rbk-modal rbk-team__modal',
+//     closeButton : 'box',
+//     blockScroll: true,
+//     width : 920,
+//     maxWidth: '100%',
+//     onOpen: function() {
+//       $('body').addClass('is-rbk-team__modal_open');
+//       setTimeout(personSlider.reload, 1000);
+//     },
+//     onClose: function() {
+//       $('body').removeClass('is-rbk-team__modal_open');
+//     }
+// });
+
+
+
+
+
+
+
 
 // menu toggle
 $('body').on('click', '.rbk-header__menu-mobile-icon', function() {
