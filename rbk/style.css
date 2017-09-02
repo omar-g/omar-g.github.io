@@ -1020,6 +1020,35 @@ body.is-rbk_modal_open {
   width: 930px;
 }
 
+.rbk-submenu-item {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 15px 22px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.rbk-submenu-item:first-child {
+  padding-left: 0;
+}
+
+.rbk-submenu-item:hover {
+  color: #00a9a8;
+}
+
+.rbk-submenu-item.is-active {
+  color: #00a9a8;
+  font-weight: 600;
+  cursor: default;
+}
+
+.rbk-submenu__list-mobile-title {
+  display: none;
+}
+
+
 /* mobile and tablet menu */
 
 @media only screen and (max-width: 1024px) {
@@ -1069,6 +1098,14 @@ body.is-rbk_modal_open {
 /* Small devices (tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+.rbk-submenu-item {
+  padding: 15px;
+}
+
+.rbk-projects-page .rbk-projects__slider-list {
+  text-align: center;
+}
 
   .rbk-modal__content {
     width: 640px;
@@ -1380,12 +1417,69 @@ body.is-rbk_modal_open {
 
 @media only screen and (max-width : 767px) {
 
+  .rbk-submenu-item {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .rbk-submenu__list-mobile-title {
+    display: block;
+  }
+
+  .rbk-submenu__list {
+    display: none;
+  }
+
+  .rbk-submenu-item {
+    margin: 0;
+  }
+
+  .rbk-submenu__list-mobile-arrow {
+    margin-left: 15px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .rbk-submenu.is-open .rbk-submenu__list-mobile-arrow {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+
+  .rbk-submenu__list-mobile-title {
+    cursor: pointer;
+    padding: 16px 15px 15px;
+    height: 57px;
+    margin: 0 -1rem;
+    border-bottom: 2px solid #e0e9f5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .rbk-submenu__list {
+    margin: 0 -1rem;
+  }
+
+  .rbk-submenu-item:first-child {
+    padding-left: 22px;
+  }
+
   .rbk-news-page .rbk-projects__slider-list {
     text-align: center;
   }
 
   .rbk-news-page .rbk-projects__slider-item {
     margin-right: 0;
+  }
+
+  #onlyMobileSlider .rbk-projects__slider-item {
+    margin-right: 20px;
   }
 
   .rbk-modal__content {
