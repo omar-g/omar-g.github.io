@@ -832,46 +832,6 @@ body.is-rbk_modal_open {
   overflow: hidden;
 }
 
-/* 
-.rbk-modal .jBox-content {
-  padding: 50px;
-  overflow: visible;
-}
-
-.rbk-modal .jBox-container {
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.is-rbk-team__modal_open .jBox-overlay {
-  background: rgba(78, 91, 110, .5);
-}
-
-.rbk-modal.jBox-closeButton-box::before {
-  content: none;
-}
-
-.rbk-modal.jBox-closeButton-box .jBox-closeButton {
-  top: 0;
-  right: -30px;
-  width: 30px;
-  height: 30px;
-  border-radius: 0;
-  background-color: #00a9a8;
-}
-
-.jBox-closeButton-box .jBox-closeButton svg {
-  width: 16px;
-  height: 16px;
-  margin-top: -8px;
-  margin-right: -8px;
-}
-
-.jBox-closeButton-box .jBox-closeButton svg path {
-  fill: #fff;
-} */
-
 .rbk-team__modal-slider {
   position: relative;
 }
@@ -918,6 +878,26 @@ body.is-rbk_modal_open {
 
 .rbk-team__modal-slider-paginator {
   margin: 0 !important;
+  text-align: center;
+}
+
+.rbk-news-page {
+  padding: 40px 0;
+}
+
+.rbk-news-page .rbk-projects__slider-list {
+  text-align: left;
+}
+
+.rbk-news-page .rbk-projects__slider-item {
+  margin-bottom: 50px;
+}
+
+.rbk-news-page .rbk-projects__slider-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.rbk-news-page__more {
   text-align: center;
 }
 
@@ -1258,6 +1238,14 @@ body.is-rbk_modal_open {
 /*Extra small devices (phones)*/
 
 @media only screen and (max-width : 767px) {
+
+  .rbk-news-page .rbk-projects__slider-list {
+    text-align: center;
+  }
+
+  .rbk-news-page .rbk-projects__slider-item {
+    margin-right: 0;
+  }
 
   .rbk-modal__content {
     width: 100vw;

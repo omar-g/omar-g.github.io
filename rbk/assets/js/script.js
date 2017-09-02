@@ -47,32 +47,6 @@ $('body').on('click', '.rbk-modal__close, .rbk-modal__overlay', function(event) 
 });
 
 
-// // modal team person
-// var teamPersonModal = new jBox('Modal', {
-//     trigger: 'click',
-//     attach: '.rbk-team__person',
-//     content : $('#teamPersonModal'),
-//     addClass : 'rbk-modal rbk-team__modal',
-//     closeButton : 'box',
-//     blockScroll: true,
-//     width : 920,
-//     maxWidth: '100%',
-//     onOpen: function() {
-//       $('body').addClass('is-rbk-team__modal_open');
-//       setTimeout(personSlider.reload, 1000);
-//     },
-//     onClose: function() {
-//       $('body').removeClass('is-rbk-team__modal_open');
-//     }
-// });
-
-
-
-
-
-
-
-
 // menu toggle
 $('body').on('click', '.rbk-header__menu-mobile-icon', function() {
   $(this).parents('.rbk-header__menu').find('.rbk-header__menu-list').slideToggle(200);

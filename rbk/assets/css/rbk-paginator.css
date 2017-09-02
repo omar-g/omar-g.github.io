@@ -1,0 +1,117 @@
+.rbk-paginator {
+  font-size: 0;
+  margin-top: 40px;
+}
+
+.rbk-paginator__item {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 6px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.rbk-paginator__item-num {
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rbk-paginator__item-arrow {
+  padding: 0 10px;
+  cursor: pointer;
+  height: auto;
+}
+
+
+.rbk-paginator__item-num:hover,
+.rbk-paginator__item-arrow:hover {
+  color: #00a9a8;
+}
+
+.rbk-paginator__item-num.is-active {
+  background-color: #00a9a8;
+  color: #fff;
+  cursor: default;
+}
+
+.rbk-paginator__item-more {
+  padding: 0 10px;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .rbk-paginator__item {
+    font-size: 18px;
+    padding-top: 4px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+  }
+
+  .rbk-paginator__item-arrow {
+    padding-top: 8px;
+  }
+
+.rbk-paginator__item-more {
+  padding: 0 7px;
+}
+}
+
+/*Extra small devices (phones)*/
+
+@media only screen and (max-width : 767px) {
+
+  .rbk-paginator__item {
+    font-size: 14px;
+    padding-top: 2px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    height: 20px;
+    margin: 0 2px;
+  }
+
+  .rbk-paginator__item-arrow {
+    padding-top: 3px;
+  }
+
+  .rbk-paginator__item-more {
+    padding: 0 3px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
