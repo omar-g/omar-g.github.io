@@ -304,6 +304,10 @@ a.rbk-header__menu-item.is-active {
   text-transform: uppercase;
 }
 
+.rbk-projects__slider-item-title {
+  display: block;
+}
+
 .rbk-examples__download {
   display: inline-block;
 }
@@ -1049,6 +1053,7 @@ body.is-rbk_modal_open {
 }
 
 .rbk-gallery__item {
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
