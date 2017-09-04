@@ -22,12 +22,24 @@ $('body').on('click', '.rbk-submenu__list-mobile-title', function() {
   }
 });
 
-$('body').on('click', '.rbk-submenu-item', function() {
+$('body').on('click', '.rbk-submenu-item_js_click', function() {
   var parentBox = $(this).parents('.rbk-submenu');
+  dataMenuItem = $(this).data('type');
   var text = $(this).text();
-  parentBox.find('.rbk-submenu-item').removeClass('is-active');
+  parentBox.find('.rbk-submenu-item_js_click').removeClass('is-active');
   $(this).addClass('is-active');
   parentBox.find('.rbk-submenu__list-mobile-title span').text(text);
+  
+  $('.rbk-projects__slider-list .rbk-projects__slider-item').each(function() {
+    var dataSliderItem = $(this).data('type');
+    if (dataMenuItem === 'all') {
+      $(this).css('display', '');
+    } else if (dataMenuItem == dataSliderItem) {
+      $(this).css('display', '');
+    } else {
+      $(this).css('display', 'none');
+    }
+  });
 
 });
 
