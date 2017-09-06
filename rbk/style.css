@@ -1171,6 +1171,42 @@ body.is-rbk_modal_open {
   margin-top: 30px;
 }
 
+.rbk-search-page {
+  padding: 30px 0 80px;
+}
+
+.rbk-search-page__form-result-num {
+  font-size: 15px;
+  color: #252b33;
+  margin-top: 15px;
+}
+
+.rbk-search-page__result-list {
+  margin-top: 35px;
+}
+
+.rbk-search-page__result-list-item {
+  margin-bottom: 15px;
+}
+
+.rbk-search-page__result-list-item-title {
+  font-size: 24px;
+  color: #00a9a8;
+  font-weight: 600;
+}
+
+a.rbk-search-page__result-list-item-title {
+  color: #00a9a8;
+  text-decoration: none;
+}
+
+.rbk-search-page__result-list-item-body {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #e6eaec;
+}
+
 /* mobile and tablet menu */
 
 @media only screen and (max-width: 1024px) {
@@ -1538,6 +1574,14 @@ body.is-rbk_modal_open {
 /*Extra small devices (phones)*/
 
 @media only screen and (max-width : 767px) {
+
+  .rbk-search-page__form-input {
+    margin-bottom: 10px;
+  }
+
+  .rbk-search-page__form-result-num {
+    margin-top: 0;
+  }
 
   .rbk-contacts-page {
     padding-top: 40px;
