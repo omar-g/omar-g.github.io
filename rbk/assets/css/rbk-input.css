@@ -1,0 +1,13 @@
+.rbk-input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #DAE1E7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea.rbk-input {
+  height: auto;
+}

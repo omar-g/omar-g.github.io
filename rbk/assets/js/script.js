@@ -1,3 +1,30 @@
+// yandex map
+
+
+ymaps.ready(init);
+var myMap, 
+    myPlacemark;
+
+function init(){ 
+    myMap = new ymaps.Map("rbkYandexMap", {
+        center: [55.774107, 37.530885],
+        zoom: 13,
+        controls: ['zoomControl']
+    }); 
+    
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'РБК Строй Инвест',
+      balloonContent: '<b>РБК Строй Инвест</b> <br>г. Москва, 2-й Хорошевский проезд, д.9/2, ВИКА-ЦЕНТР, офис 209'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'assets/img/tip.svg',
+      iconImageSize: [31, 39],
+      iconImageOffset: [-5, -38]
+    });
+    
+    myMap.geoObjects.add(myPlacemark);
+}
+
 
 // gallery
 if (typeof lightbox !== 'undefined') {
