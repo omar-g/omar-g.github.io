@@ -48,12 +48,10 @@ function CDT() {
 
 
         // You can add time's up message here
-        var timer = new CountdownTimer('timer1', tl, '<span class="number-wrapper"><div class="line"></div><span class="number end">Время истекло</span></span>'),
-        timer2 = new CountdownTimer('timer2', tl, '<span class="number-wrapper"><div class="line"></div><span class="number end">Время истекло</span></span>'),
-        timer3 = new CountdownTimer('timer3', tl, '<span class="number-wrapper"><div class="line"></div><span class="number end">Время истекло</span></span>');
+        var timer = new CountdownTimer('timer1', tl, '<span class="number-wrapper"><div class="line"></div><span class="number end">Время истекло</span></span>');
+        var timer2 = new CountdownTimer('timer2', tl, '<span class="number-wrapper"><div class="line"></div><span class="number end">Время истекло</span></span>');
         timer.countDown();
         timer2.countDown();
-        timer3.countDown();
     }
     CDT();
 });
